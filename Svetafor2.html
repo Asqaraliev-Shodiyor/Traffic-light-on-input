@@ -1,0 +1,56 @@
+<style>
+    #svetafor {
+        height: 200px;
+        width: 70px;
+        background: black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    
+    #red {
+        width: 50px;
+        height: 50px;
+        border-radius: 50px;
+        background: red;
+        margin: 5px;
+        opacity: 0.3;
+    }
+    
+    #yellow {
+        width: 50px;
+        height: 50px;
+        border-radius: 50px;
+        background: yellow;
+        margin: 5px;
+        opacity: 0.3;
+    }
+    
+    #green {
+        width: 50px;
+        height: 50px;
+        border-radius: 50px;
+        background: green;
+        margin: 5px;
+        opacity: 0.3;
+    }
+</style>
+<div id="svetafor">
+    <div id="red"></div>
+    <div id="yellow"></div>
+    <div id="green"></div>
+</div>
+<script>
+    var svetafor = document.getElementById("svetafor");
+    var color = prompt("svetafor rangini kiriting");
+
+    //agar qizil-sariq-yashil bolsa
+    if (["red", "yellow", "green"].includes(color)) {
+        document.getElementById(color).style.opacity = "1";
+    }
+    //uchalasi ham bolmasa
+    else {
+        document.write("notogri");
+    }
+</script>
